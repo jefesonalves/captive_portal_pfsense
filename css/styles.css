@@ -3,29 +3,67 @@
 html {
     font-family: "Roboto Mono", monospace;
 }
+
+body {
+    width: 400px;
+    height: 220px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.body-image {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
 h1 {
-    text-align: center;
+    text-align: center;    
+    color: #0a0a23;
+    
+}
+
+h3 {
+    text-align: justify;
     color: #0a0a23;
 }
 
-/* Menu de navegação */
-
-nav {
-    text-align: center;
+fieldset {    
+    width: 320px;
+    height: 290px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    position: relative;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-nav a {
-    color: #0a0a23;
-    text-decoration: none;
+
+label {
+    padding: 5px;
 }
 
-nav a:hover {
-    background-color: #1b1b32;
-    color: #f5f6f7;
-    padding: 15px;
+form {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid green;
     border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-/* rodapé */
+button {
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
 footer {
     font-size: 0.75em;
 }

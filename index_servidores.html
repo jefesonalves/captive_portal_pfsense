@@ -8,41 +8,33 @@
       Autenticação
     </title>
     <link rel="icon" href="img/logo_ifce.png">
-    <link rel="stylesheet" href="/captive_portal_pfsense/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
-  <body class="text-center">
-    <nav aria-label="navegação primária">
-      <h1>Acesso à internet no IFCE - Campus Iguatu</h1>
-    </nav>
-    <hr>
+  <body>
+    <img class="body-image" src="img/logo_ifce.png" alt="Logo do IFCE">
+    <h1>Bem-vindo</h1>
     <main>
-      <article id="autenticacao">
-        <img class="mb-4" src="img/logo_ifce.png" alt="" width="180" height="160">
-        <h3>Digite sua matrícula e senha do sistema SUAP.</h3>
-        <form method="post" action="#PORTAL_ACTION#">
-          <fieldset>
-            <legend>
-              Matrícula e senha do sistema SUAP
-          </legend>
-          <p>
-            <label for="floatingInput">Matrícula</label>
+      <form method="post" action="#PORTAL_ACTION#">
+        <fieldset>
+          <p>Para acesso à internet, utilize as credenciais do SUAP e clique no botão Acessar.</p>
+          <label for="floatingInput">Matrícula do SUAP:</label>
             <br>
             <input name="auth_user" type="text" class="form-control" id="floatingInput" placeholder="Matrícula">
-          </p>            
-            <label for="floatingPassword">Senha</label>
+          <p>
+            <label for="floatingPassword">Senha do SUAP:</label>
             <br>
             <input name="auth_pass" type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-            <input name="redirurl" type="hidden" value="#PORTAL_REDIRURL#">
-            <input name="zone" type="hidden" value="#PORTAL_ZONE#">    
-          </fieldset>
-          <p>
-            <button name="accept" class="w-100 btn btn-success" type="submit" value="Continue">Acessar</button>
           </p>
-        </form>
-      </article>      
+          <input name="redirurl" type="hidden" value="#PORTAL_REDIRURL#">
+          <input name="zone" type="hidden" value="#PORTAL_ZONE#">
+          <button name="accept" class="w-100 btn btn-success" type="submit" value="Continue">Acessar</button>                    
+        </fieldset>        
+      </form>
     </main>
     <footer>
-      &copy; Copyright Captive Portal
-  </footer>
+      <p>
+        &copy; Copyright Captive Portal
+      </p>      
+    </footer>
   </body>
 </html>
